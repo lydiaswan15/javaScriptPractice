@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var list = [1, 2, 3, 4, 5, 6];
+        var list2 = {
+            name: "Lydia", 
+            lastName: "Swanson"
+        }
+        checkIfArray(list2);
+
+        function checkIfArray(list){
+
+            //The following code is a really long way to do it. The Array.isArray(list) will be much faster. 
+            // let isObject = false;
+
+            // if(list.length == null){
+            //     console.log('This is an object');
+            // }else{
+            //     console.log('This is an Array');
+            // }
+
+            console.log(Array.isArray(list));
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

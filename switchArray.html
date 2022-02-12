@@ -1,0 +1,27 @@
+<!-- This program will list all the properties of an object -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       let phrase = "This is a string and you need to reverse it.";
+       reverseString(phrase, " ");
+
+       function reverseString(phrase, seperator){
+            let temporary = phrase.split(" ");
+            temporary.forEach(element => {
+                console.log(element);
+            });
+            console.log(temporary);
+       }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

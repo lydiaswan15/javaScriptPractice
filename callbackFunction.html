@@ -1,0 +1,32 @@
+<!-- This is a small example of a callback function -->
+<!-- Callback functions are used when you are wanting to call another function within another AFTER something 
+has happened. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        array = [1,2, 3, 4, 5];
+
+       function modifyArray(arrayName, callback){
+
+           arrayName.push(15);
+           callback();
+       }
+
+       modifyArray(array, function(){
+            console.log(array);
+       })
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
